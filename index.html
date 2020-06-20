@@ -1,0 +1,233 @@
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="css/Style.css">
+        <style>
+            /* Set the size of the div element that contains the map */
+           #map {
+             height: 400px;  /* The height is 400 pixels */
+             width: 100%;  /* The width is the width of the web page */
+            }
+         </style>
+         <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Start Home -->
+        <div class="home">
+            <div class="nav">
+
+            </div>
+            <div class="caption">
+                <h3>Welcome to</h3>
+                <h1>Family Bakery</h1>
+                <p>
+                    We're the biggest, best equipped and most advanced Bakery in the greater<br> Los Angeles area.
+                </p>
+                <button class="btn1">Learn More</button>
+                <button class="btn2">Contact Us</button>
+            </div>
+        </div>
+        <!-- End Home -->
+
+        <!-- Start About -->
+        <div class="about">
+            <div class="container">
+                <div class="about-img">
+                    <img src="images/alexandru-stavrica-170390-800x760.jpg" alt="alexandru">
+                </div>
+                <div class="about-info">
+                    <h1>Who we are?</h1>
+                    <p>
+                        We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.
+                    </p>
+                    <ul>
+                        <li><img src="images/1.PNG"><p style="margin-top: 9px;margin-left: 10px;">We care about environment.</p></li> 
+                        <li><img src="images/2.PNG"><p style="margin-top: 9px;margin-left: 10px;">We are trusted by hundreds of clients.</p><li>
+                        <li><img src="images/3.PNG"><p style="margin-top: 9px;margin-left: 10px;">Social media loves us!</p></li>
+                        <li><img src="images/4.PNG"><p style="margin-top: 9px;margin-left: 10px;">This list is super easy to create</p></li>
+                    </ul>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- End About -->
+
+        <!-- Start location -->
+        <div class="location">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-info">
+                        <h1>Our Location</h1>
+                        <p class="desc">
+                            We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.
+                        </p>
+                        <p class="desc2">
+                            Story on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.
+                        </p>
+                    </div>
+                    <div class="location-img">
+                        <img src="images/full-2-800x640.jpg" alt="full">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End location -->
+
+        <!-- Start Baking  -->
+        <div class="baking">
+            <h1>Our Baking</h1>
+            <p>
+                Learn more about them. We have worked truly hard to make them perfect for every use.
+            </p>
+            <div class="container">
+                <div class="baking-content">
+                    <div class="baking-item">
+                        <img src="images/ben-garratt-134774-600x500.jpg" alt="ben-garratt">
+                        <h3>
+                            Superior Breads
+                        </h3>
+                        <p>
+                            Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.
+                        </p>
+                    </div>
+                    <div class="baking-item">
+                        <img src="images/stas-ovsky-123540-600x500.jpg" alt="stas-ovsky">
+                        <h3>
+                            Bagels
+                        </h3>
+                        <p>
+                            Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.
+                        </p>
+                    </div>
+                    <div class="baking-item">
+                        <img src="images/clem-onojeghuo-206832-600x500.jpg" alt="clem-onojeghuo">
+                        <h3>
+                            Cookies
+                        </h3>
+                        <p>
+                            Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Baking  -->
+
+        <!-- Start Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="contact-info">
+                    <h1>Contact Information</h1>
+                    <p>
+                        I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+
+                    <h3>Our contact details:</h3>
+                    <ul>
+                        <li><img src="images/book.PNG"><p style="margin-top: 9px;margin-left: 10px;">Manchester St 123-78B, Random 713, UK</p></li> 
+                        <li><img src="images/mobile.PNG"><p style="margin-top: 9px;margin-left: 10px;">+46 123 456 789</p><li>
+                        <li><img src="images/head.PNG"><p style="margin-top: 9px;margin-left: 10px;">+37 431 456 789</p></li>
+                        <li><img src="images/message.PNG"><p style="margin-top: 9px;margin-left: 10px;">hello@sitename.com</p></li>
+                    </ul>
+                </div>
+                <div class="contact-map">
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+                    <script>
+                // Initialize and add the map
+                function initMap() {
+                // The location of Uluru
+                var uluru = {lat: -25.344, lng: 131.036};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 4, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+                }
+                    </script>
+                    <!--Load the API from the specified URL
+                    * The async attribute allows the browser to render the page while the API loads
+                    * The key parameter will contain your own API key (which is not needed for this tutorial)
+                    * The callback parameter executes the initMap() function
+                    -->
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                    </script>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- Start Blog -->
+        <div class="blog">
+            <div class="container">
+                <div class="blog-info">
+                    <h3>About us</h3>
+                    <p>
+                        I am text block. Click edit button<br> to change this text. Lorem ipsum<br> dolor sit amet, consectetur. I am<br> text block. Click edit button to<br> change this text. Lorem ipsum<br> dolor sit amet, consectetur.
+                    </p>
+                    <p class="last-desc">
+                        We are the champions! We are<br> the most amazing theme of all<br> time, yeah.
+                    </p>
+                </div>
+                <div class="blog-info">
+                    <h3>Why we are special?</h3>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i>Our magical recipe.<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right"></i>We care about environment.<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right"></i>We are trusted by hundreds of<br><br> clients.<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right"></i>Social media loves us!<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right"></i>This list is super easy to create.</li>
+                    </ul>    
+                </div>
+                <div class="blog-info">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li><i class="fa fa-angle-right" ></i>Monday 10AM - 9PM<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right" ></i>Tuesday 10AM - 9PM<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right" ></i>Wednesday 10AM - 9PM<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right" ></i>Thursday 10AM - 10PM<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right" ></i>Friday 10AM - 10PM<span class="line"></span></li>
+                        <li><i class="fa fa-angle-right" ></i>Weekends 10AM - 11PM</li>
+                    </ul>
+                </div>
+                <div class="blog-info">
+                    <h3>Contact Details</h3>
+                    <ul>
+                        <li><i class="fa fa-map-marker fa-lg"></i>Manchester Road 123-78B,<br><br> Silictown 7854MD, Great<br><br> Country<br><span class="line"></span></li>
+                        <li><i class="fa fa-phone fa-lg"></i>+46 123 456 789<span class="line"></span></li>
+                        <li><i class="fa fa-envelope fa-lg"></i>hello@sitename.com<span class="line"></span></li>
+                        <li><i class="fa fa-globe"></i>http://www.sitename.com</li> 
+                    </ul>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!-- Start Blog -->
+
+        <!-- Start Footer -->
+        <div class="footer">
+            <img src="images/bakery-light-1.png" alt="bakery-light">
+            <p>
+                Copyright 2017. All rights reserved.
+            </p>
+            <ul>
+                <li>
+                    <a href="#"><img src="images/face.PNG"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/goo.PNG"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/in.PNG"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/twi.PNG"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Footer -->
+    </body>
+</html>

@@ -1,0 +1,336 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: normal;
+}
+ul
+{
+    list-style: none;
+}
+.container
+{
+    width: 90%;
+    margin: auto;
+}
+.clr
+{
+    clear: both;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Start Home */
+.nav
+{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.home
+{
+    background-image: url(../images/drew-coffman-1872.jpg);
+    height: 800px;
+    background-size: 100% 100%;
+}
+.home .caption
+{
+    text-align: center;
+    margin-top: 250px;
+    color: #fff;
+}
+h1,h3
+{
+    font-weight: normal;
+}
+.caption h1
+{
+    font-size: 60px;
+    margin: 15px 0;
+}
+.caption p
+{
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+.btn1,.btn2
+{
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn1
+{
+    background-color: #8e7754;
+    margin-right: 10px;
+}
+.btn2
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+/* End Home */
+
+/* Start About */
+.about
+{
+    padding: 80px 0;
+}
+.about-img
+{
+    width: 50%;
+    float: left;
+    padding: 0 30px 0 0;
+    box-sizing: border-box;
+}
+.about-img img
+{
+    width: 100%;
+}
+.about-info
+{
+    width: 50%;
+    float: left;
+    padding: 0px 0 20px 30px;
+    box-sizing: border-box;
+}
+.about-info h1
+{
+    color: #303030;
+}
+
+.about-info p
+{
+    color: #686868;
+    margin: 20px 0;
+    line-height:1.8;
+    font-size: 17px;
+}
+ul
+{
+    margin-top: 40px;
+}
+ul li
+{
+    color: #686868;
+    margin-bottom: 0
+}
+ul li 
+{
+    overflow: auto;
+}
+ul li p,
+ul li img
+{
+   float: left;
+}
+
+/* End About */
+
+/* Start Location */
+.location
+{
+    background-color: #F8F8F8;
+    padding: 80px 0;
+}
+.location-content
+{
+    overflow: hidden;
+}
+.location-info
+{
+    width: 50%;
+    float: left;
+    padding: 40px 30px 40px 0;
+    box-sizing: border-box;
+}
+.location-img
+{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.location-img img
+{
+    width: 100%;
+}
+.location-info h1
+{
+    color: #303030;
+}
+.location-info .desc
+{
+    margin: 30px 0; 
+    color: #686868;
+    line-height:1.8;
+    font-size: 17px;
+}
+.location-info .desc2
+{
+    color: #686868;
+    line-height:1.8;
+    font-size: 17px;
+}
+/* End Location */
+
+/* Start Baking */
+.baking
+{
+    padding: 80px 0;
+    text-align: center;
+}
+.baking h1
+{
+    color: #303030;  
+}
+.baking p
+{
+    margin: 30px 0 50px 0; 
+    color: #686868;
+    font-size: 17px;  
+}
+.baking-content
+{
+    overflow: hidden;
+}
+.baking-item
+{
+    width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.baking-item img
+{
+    width: 100%;
+}
+.baking-item h3
+{
+    color: #303030;
+    margin: 20px 0;
+}
+.baking-item p
+{
+    color: #686868;
+    line-height: 1.7;
+    margin-top: 0;
+}
+/* End Baking */
+
+/* Start Contact */
+.contact
+{
+    background-color: #F8F8F8;
+    padding: 80px 0;
+}
+.contact-info,
+.contact-map
+{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.contact-info
+{
+    padding-right: 20px;
+}
+
+.contact-info h1
+{
+    color: #303030;
+    margin-bottom: 20px;  
+}
+.contact-info p
+{
+    color: #686868;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    font-size: 17px;  
+}
+.contact-info h3
+{
+    color: #686868;
+    margin-bottom: 30px 
+}
+.contact-info ul
+{
+    margin-top: 0;
+}
+.contact-map
+{
+    padding-left: 20px;
+}
+/* End Contact */
+
+/* Start Blog */
+.blog
+{
+    padding: 80px 0;
+    background-color: #403D38;
+}
+.blog-info
+{
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.blog-info h3
+{
+    color: #fff;
+}
+.blog-info p
+{
+    color: #969696;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 34px 0;
+}
+.blog-info ul li
+{
+    color: #969696;
+    margin-bottom: 0;
+}
+ul li i
+{
+    margin-right: 8px;
+}
+.line
+{
+    display: block;
+    background-color: #4A4742;
+    height: 2px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+/* End Blog */
+
+/* Start Footer */
+.footer
+{
+    background-color: #353330;
+    text-align: center;
+    padding: 80px 0;
+}
+.footer p
+{
+    color: #777;
+    margin: 20px 0 15px 0;
+}
+.footer ul 
+{
+    margin: 0;
+}
+.footer ul li
+{
+    display: inline-block;
+}
+/* End Footer */
